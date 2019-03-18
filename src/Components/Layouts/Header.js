@@ -1,8 +1,24 @@
 import React, { Component } from "react";
+import {
+  AppBar,
+  Toolbar,
+  MenuIcon,
+  IconButton,
+  Typography,
+  Button
+} from "@material-ui/core/";
 
 class Header extends Component {
   render() {
-    return <h1>Header</h1>;
+    return (
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="headline" color="inherit">
+            Exercise Database
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    );
   }
 }
 
